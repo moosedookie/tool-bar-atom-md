@@ -1,0 +1,25 @@
+{
+  "name": "tool-bar-atom-md",
+  "main": "./lib/tool-bar-atom-md",
+  "version": "1.0.0",
+  "description": "Modified version of tool-bar-atom with some personally preferred actions.",
+  "keywords": [
+    "toolbar",
+    "tool-bar"
+  ],
+  "repository": "https://github.com/moosedookie/tool-bar-atom-md",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {
+    "tool-bar": "^0.1.0"
+  },
+  "consumedServices": {
+    "tool-bar": {
+      "versions": {
+        "^0 || ^1": "consumeToolBar"
+      }
+    }
+  }
+}
