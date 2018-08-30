@@ -28,5 +28,10 @@
         "^0 || ^1": "consumeToolBar"
       }
     }
+  },
+  "apmInstallSource": {
+    "type": "git",
+    "source": "https://github.com/moosedookie/tool-bar-atom-md.git",
+    "sha": "14fff46f19059769ff5de122ad0396fa641cab0d"
   }
 }
