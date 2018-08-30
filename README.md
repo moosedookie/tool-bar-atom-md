@@ -39,13 +39,14 @@ Available toolbar buttons:
 * **Stop Script** (Requires `script` Package)
 * **Configure** (Requires `script` Package)
 * -
-* **Open Terminal (split bottom)**  (Requires `term2` or `term3` or `terminal-plus` or `platformio-ide-terminal` Package)
+* **Open Console Panel** (Requires `console-panel` Package)
+* **Open Terminal (split bottom)** (Requires `term2` or `term3` or `terminal-plus` or `platformio-ide-terminal` Package)
 * **Reload Window**
 * **Toggle devtools**
 * **Toggle Git Tab**
 * -
-* **Run localhost on port 3000...**  (Requires `atom-live-server` Package)
-* **Stop localhost on port 3000...**  (Requires `atom-live-server` Package)
+* **Run localhost on port 3000...** (Requires `atom-live-server` Package)
+* **Stop localhost on port 3000...** (Requires `atom-live-server` Package)
 * -
 * **Toggle Command Palette**
 * **Settings**
