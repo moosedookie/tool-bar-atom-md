@@ -135,25 +135,29 @@ module.exports =
       @toolBar.addSpacer()
       @toolBar.addButton
         'icon': 'list-alt'
-        'callback': 'Console:Toggle'
+        'callback': 'console:toggle'
         'tooltip': 'Toggle Console'
         'iconset': 'fa'
 
     if atom.packages.loadedPackages['term3']
+      @toolBar.addSpacer()
       @toolBar.addButton
         'icon': 'terminal'
         'callback': 'term3:open-split-down'
         'tooltip': 'Term3 Split Down'
+
     else if atom.packages.loadedPackages['term2']
       @toolBar.addButton
         'icon': 'terminal'
         'callback': 'term2:open-split-down'
         'tooltip': 'Term2 Split Down'
+
     else if atom.packages.loadedPackages['terminal-plus']
       @toolBar.addButton
         'icon': 'terminal'
         'callback': 'terminal-plus:toggle'
         'tooltip': 'Toggle Terminal-plus'
+
     else if atom.packages.loadedPackages['platformio-ide-terminal']
       @toolBar.addButton
         'icon': 'terminal'
