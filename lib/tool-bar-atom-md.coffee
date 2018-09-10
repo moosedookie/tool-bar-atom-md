@@ -18,15 +18,15 @@ module.exports =
       'iconset': 'fa'
 
     @toolBar.addButton
-      'icon': 'folder-open'
-      'callback': 'application:open-folder'
-      'tooltip': 'Open Folder'
-      'iconset': 'fa'
-
-    @toolBar.addButton
       'icon': 'floppy-o'
       'callback': 'core:save'
       'tooltip': 'Save File'
+      'iconset': 'fa'
+
+    @toolBar.addButton
+      'icon': 'folder-open'
+      'callback': 'application:open-folder'
+      'tooltip': 'Open Folder'
       'iconset': 'fa'
 
     if atom.packages.loadedPackages['project-viewer']
@@ -84,12 +84,6 @@ module.exports =
         'tooltip': 'Toggle Minimap'
         'callback': 'minimap:toggle'
         'iconset': 'fa'
-
-    if atom.packages.loadedPackages['expose']
-      @toolBar.addButton
-        'icon': 'browser'
-        'tooltip': 'Toggle Exposé'
-        'callback': 'expose:toggle'
 
     @toolBar.addSpacer()
 
