@@ -3,6 +3,7 @@
 ## Description
 
 Modified version of tool-bar-atom with some personally preferred actions in the tool-bar.
+* **Update to support v1.1.11 of 'tool-bar'**
 
 ## Preview
 
@@ -24,7 +25,7 @@ Available toolbar buttons:
 * **Toggle Fullscreen**
 * **Toggle Sidebar**
 * **Toggle Minimap**
-* **Toggle exposé** (Requires `expose` Package)
+* **Toggle Scroll-Sync** (Requires `scroll-sync` Package)
 * -
 * **Auto Indent**
 * **Fold All**
@@ -33,17 +34,15 @@ Available toolbar buttons:
 * -
 * **Find**
 * **Find and Replace**
+* **Open Terminal (split bottom)** (Requires `term2` or `term3` or `terminal-plus` or `platformio-ide-terminal` Package)
+* **Reload Window**
+* **Toggle devtools**
+* **Toggle Git Tab**
 * -
 * **Run Script** (Requires `script` Package)
 * **Run by Line** (Requires `script` Package)
 * **Stop Script** (Requires `script` Package)
 * **Configure** (Requires `script` Package)
-* -
-* **Open Console Panel** (Requires `console-panel` Package)
-* **Open Terminal (split bottom)** (Requires `term2` or `term3` or `terminal-plus` or `platformio-ide-terminal` Package)
-* **Reload Window**
-* **Toggle devtools**
-* **Toggle Git Tab**
 * -
 * **Run localhost on port 3000...** (Requires `atom-live-server` Package)
 * **Stop localhost on port 3000...** (Requires `atom-live-server` Package)

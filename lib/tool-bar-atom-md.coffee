@@ -6,19 +6,19 @@ module.exports =
     @toolBar = toolBar 'tool-bar-atom-md'
 
     @toolBar.addButton
-      'icon': 'file-o'
+      'icon': 'file'
       'callback': 'application:new-file'
       'tooltip': 'New File'
       'iconset': 'fa'
 
     @toolBar.addButton
-      'icon': 'file-text'
+      'icon': 'file-alt'
       'callback': 'application:open-file'
       'tooltip': 'Open File'
       'iconset': 'fa'
 
     @toolBar.addButton
-      'icon': 'floppy-o'
+      'icon': 'save'
       'callback': 'core:save'
       'tooltip': 'Save File'
       'iconset': 'fa'
@@ -31,9 +31,10 @@ module.exports =
 
     if atom.packages.loadedPackages['project-viewer']
       @toolBar.addButton
-        'icon': 'file-submodule'
+        'icon': 'project-diagram'
         'tooltip': 'List projects'
         'callback': 'project-viewer:togglePanel'
+        'iconset': 'fa'
 
     @toolBar.addSpacer()
 
@@ -44,7 +45,7 @@ module.exports =
       'iconset': 'fa'
 
     @toolBar.addButton
-      'icon': 'repeat'
+      'icon': 'redo'
       'callback': 'core:redo'
       'tooltip': 'Redo'
       'iconset': 'fa'
@@ -80,10 +81,16 @@ module.exports =
 
     if atom.packages.loadedPackages['minimap']
       @toolBar.addButton
-        'icon': 'map-o'
+        'icon': 'map'
         'tooltip': 'Toggle Minimap'
         'callback': 'minimap:toggle'
         'iconset': 'fa'
+
+    @toolBar.addButton
+      'icon': 'scroll'
+      'callback': 'scroll-sync:toggle'
+      'tooltip': 'Toggle Scroll-Sync'
+      'iconset': 'fa'
 
     @toolBar.addSpacer()
 
@@ -94,13 +101,13 @@ module.exports =
       'iconset': 'fa'
 
     @toolBar.addButton
-      'icon': 'level-up'
+      'icon': 'level-up-alt'
       'callback': 'editor:fold-all'
       'tooltip': 'Fold all'
       'iconset': 'fa'
 
     @toolBar.addButton
-      'icon': 'level-down'
+      'icon': 'level-down-alt'
       'callback': 'editor:unfold-all'
       'tooltip': 'Unfold all'
       'iconset': 'fa'
@@ -124,14 +131,6 @@ module.exports =
       'callback': 'find-and-replace:show-replace'
       'tooltip': 'Find and Replace...'
       'iconset': 'fa'
-
-    if atom.packages.loadedPackages['console-panel']
-      @toolBar.addSpacer()
-      @toolBar.addButton
-        'icon': 'list-alt'
-        'callback': 'console:toggle'
-        'tooltip': 'Toggle Console'
-        'iconset': 'fa'
 
     if atom.packages.loadedPackages['term3']
       @toolBar.addSpacer()
@@ -159,7 +158,7 @@ module.exports =
         'tooltip': 'Toggle Platformio-ide-terminal'
 
     @toolBar.addButton
-      'icon': 'refresh'
+      'icon': 'sync'
       'callback': 'window:reload'
       'tooltip': 'Reload Window'
       'iconset': 'fa'

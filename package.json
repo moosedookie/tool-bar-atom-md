@@ -32,6 +32,6 @@
   "apmInstallSource": {
     "type": "git",
     "source": "https://github.com/moosedookie/tool-bar-atom-md.git",
-    "sha": "23fa958b29b92b2c301d58e39e6c74ee743ea43d"
+    "sha": "0e210e6fe91647f3839bb0aff1102487f0fd34a2"
   }
 }
