@@ -218,7 +218,7 @@ module.exports =
     @toolBar.addSpacer()
 
     @toolBar.addButton
-      'icon': 'navicon-round'
+      'icon': 'md-menu'
       'callback': 'command-palette:toggle'
       'tooltip': 'Toggle Command Palette'
       'iconset': 'ion'
